@@ -5,6 +5,8 @@
     "moduleResolution": "bundler",
     "strict": true,
     "verbatimModuleSyntax": true,
+    "jsx": "preserve",
+    "jsxImportSource": "@opentui/solid",
     "outDir": "dist",
     "rootDir": "src"
   },

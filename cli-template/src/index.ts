@@ -5,6 +5,7 @@ import { UI } from "./cli/ui"
 import { FormatError } from "./cli/error"
 import { HelloCommand } from "./cli/cmd/hello"
 import { AskCommand } from "./cli/cmd/ask"
+import { TuiCommand } from "./cli/cmd/tui"
 
 process.on("unhandledRejection", (e) => {
   Log.Default.error("rejection", { e: e instanceof Error ? e.message : e })
@@ -41,6 +42,7 @@ const cli = yargs(hideBin(process.argv))
   })
   .command(HelloCommand)
   .command(AskCommand)
+  .command(TuiCommand)
   .demandCommand(1, "Please specify a command. Use --help to see available commands.")
   .fail((msg, err) => {
     if (
