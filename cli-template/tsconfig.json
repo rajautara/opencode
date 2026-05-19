@@ -6,7 +6,7 @@
     "strict": true,
     "verbatimModuleSyntax": true,
     "jsx": "preserve",
-    "jsxImportSource": "@opentui/solid",
+    "jsxImportSource": "solid-js",
     "outDir": "dist",
     "rootDir": "src"
   },
